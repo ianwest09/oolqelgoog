@@ -1,0 +1,29 @@
+{
+  "entities": {
+    "savedMoment": {
+      "title": "Saved Connection Moment",
+      "description": "A saved cultural connection moment created for dementia and elder companionship",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "selectionRationale": { "type": "string" },
+        "openingSentence": { "type": "string" },
+        "conversationInvitations": { "type": "array" },
+        "practicalActivity": { "type": "string" },
+        "suggestedDurationMinutes": { "type": "number" },
+        "closingSentence": { "type": "string" },
+        "caregiverNote": { "type": "string" },
+        "personalNotes": { "type": "string" },
+        "createdAt": { "type": "number" },
+        "lastReflectedAt": { "type": "number" }
+      },
+      "required": ["title", "openingSentence", "practicalActivity", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/savedMoments/{momentId}": {
+      "schema": "savedMoment",
+      "description": "Saved connection moments with caregiver notes"
+    }
+  }
+}

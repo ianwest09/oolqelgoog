@@ -1,0 +1,8 @@
+{
+  "name": "Remix Kinship: Moments of Connection",
+  "description": "An AI-powered tool that transforms cultural interests into personalized, meaningful activities for caregivers and older adults.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
